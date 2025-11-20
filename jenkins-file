@@ -1,22 +1,10 @@
 pipeline {
     agent any
-
     stages {
-        stage('Checkout') {
+        stage('Hello') {
             steps {
-                echo "Checking out code..."
-                checkout scm
+                echo 'Hello, Jenkins!'
             }
         }
-
-        stage('Build') {
-            steps {
-                echo "Building the project..."
-                sh 'echo "Build step (replace with your actual build command)"'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                echo "Running tests..."
-                sh 'echo "Test step (replace with your test command)"'
+    }
+}
